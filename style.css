@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #161616;
+}
+::-webkit-scrollbar {
+    background-color: white;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 4px honeydew;
+    z-index: 1;
+    background-color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3DCFD3;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+nav .right a {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: all .5s ease;
+}
+
+nav .right a:hover {
+    color: white;
+}
+
+nav .fa-solid {
+    display: none;
+    font-size: 26px;
+    color: #3DCFD3;
+}
+
+.mobile {
+    align-items: center;
+    background-color: #161616;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: -105%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    z-index: 2;
+}
+
+.mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 25px;
+}
+
+.mobile span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile span i {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #3DCFD3;
+}
+
+.mobile a {
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    color: #3DCFD3;
+    font-weight: normal;
+}
+
+
+/* .............................................................................. */
+
+@media screen and (max-width: 600px) {
+    nav .fa-solid {
+        display: flex;
+    }
+.right{
+    display: none;
+}
+    }
