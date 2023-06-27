@@ -374,6 +374,16 @@ button{
 button:hover{
     background-color:#3DCFD3 ;
 }
+
+/* .......................... Footer ....................... */
+footer {
+    margin-top: 5em;
+    border-top: 1px solid #ffffff8e;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
 /* .............................................................................. */
 
 @media only screen and (max-width: 768px) {
@@ -400,6 +410,15 @@ button:hover{
     .flip-card {
         width: 45%;
     }
+    /* contact section */
+#Contact{
+    flex-direction: column;
+ }
+ #Contact-left{
+     width: 100%;
+     text-align: center;
+ 
+ }
   }
 /* .............................................................................. */
 
@@ -448,6 +467,9 @@ button:hover{
 button {
     width: 125px;
 }
-
+/* footer */
+footer {
+    padding: 15px;
+}
     }
 
