@@ -321,10 +321,59 @@ nav .fa-solid {
     background-color: white;
     color: #3DCFD3;
 }
+/*.......................... Contact Secton ..........................  */
+#Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+    font-size: 1.3em;
+}
+#Contact-left{
+    width: 42%;
 
+}
+#Contact #Contact-left h1{
+    color: #3DCFD3;   
+    font-size: 2.6em;
+}
+#Contact #Contact-left p{
+    line-height: 2;
+    color: white;
+}
+#Contact #Contact-left span{
+    color: #3DCFD3;
+}
+#contact-para1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.2em;
+}
+#Contact-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+    
+}
+#Contact #Contact-right input{
+        padding: 10px;
+        width: 350px;       
+    margin-bottom: 25px;
+}
+#Contact #Contact-right label{
+    color: #3DCFD3;
+}
 
-
-
+button{
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 150px;
+}
+button:hover{
+    background-color:#3DCFD3 ;
+}
 /* .............................................................................. */
 
 @media only screen and (max-width: 768px) {
@@ -361,6 +410,9 @@ nav .fa-solid {
 .right{
     display: none;
 }
+.icon_a {
+    padding: 0.4em;
+}
 /* Project Section  */
 .flip-card {
     width: 95%;
@@ -370,5 +422,32 @@ nav .fa-solid {
     top: 307px;
     
 }
+
+/* contact section */
+#Contact{
+   flex-direction: column;
+    margin: 25px;
+    padding: 0px;
+    font-size: 1.2em;
+}
+#Contact-left{
+    width: 100%;
+    text-align: center;
+
+}
+#Contact #Contact-left h1{
+    margin: 20px;
+}
+#Contact-right{
+    margin-left: 0px;
+    
+}
+#Contact #Contact-right input {
+    width: 283px;
+}
+button {
+    width: 125px;
+}
+
     }
 
